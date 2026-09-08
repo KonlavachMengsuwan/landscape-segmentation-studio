@@ -1,0 +1,11 @@
+# Recover a missing imported image
+
+Use the image's recovery action to select an exact copy of its original file. The chosen filename may differ, but its complete bytes must match the SHA256 recorded when the image was imported. A same-named replacement, recompressed JPEG, metadata-edited file, or visually similar image is rejected. The app never searches folders for possible matches.
+
+Relink recreates only missing original/canonical assets inside the existing project. Before writing, it verifies the original hash, regenerated canonical hash, dimensions, orientation transformation, and every existing asset. It preserves the saved name, image ID, source identity, masks, prompts, styling, run history, and project revision. Correct existing files are not rewritten. The backend method returns the unchanged immutable image metadata.
+
+If an existing original or canonical file is corrupt, relink refuses to overwrite it. Recover from a trusted portable export bundle instead: import the bundle into a separate recovered project, preserving the damaged project for investigation. Portable bundles contain the selected source's original bytes, canonical image, project/run JSON, separate original and edited masks, and an integrity manifest. Their contents are checked before import; a bundle does not include model weights or credentials. Restore the bundle corresponding to the result you intend to recover, since it cannot contain later unsaved work.
+
+If canonical decoding differs from the saved hash, keep the original bytes and use the recorded environment or the bundle's validated assets. The application does not silently resample or adopt a changed pixel grid. If the SSD is unavailable or a write fails, the operation reports failure. A safely restored first asset can remain after a second asset fails; retrying with the same original bytes validates it and restores only what is still missing.
+
+`tests/test_relink.py` covers missing original/canonical files, same-named different bytes, unchanged valid assets, corrupt siblings, simulated unavailable-drive and symlink states, changed canonical decoding, and retry after an interrupted two-asset restore. These are controlled fixtures; the real SSD is never unplugged during a test.

@@ -1,0 +1,26 @@
+[
+  {
+    "component": "facebookresearch/segment-anything",
+    "path": "SAM1-APACHE-2.0.txt",
+    "source": "https://raw.githubusercontent.com/facebookresearch/segment-anything/dca509fe793f601edb92606367a655c15ac00fdf/LICENSE",
+    "revision": "dca509fe793f601edb92606367a655c15ac00fdf",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "checked_on": "2026-09-08"
+  },
+  {
+    "component": "facebookresearch/sam2",
+    "path": "SAM2-APACHE-2.0.txt",
+    "source": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/LICENSE",
+    "revision": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "checked_on": "2026-09-08"
+  },
+  {
+    "component": "facebookresearch/sam3",
+    "path": "SAM3-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/facebookresearch/sam3/660a5e9e1b8b4c02c0ad97229b88a09a6e4ff5b7/LICENSE",
+    "revision": "660a5e9e1b8b4c02c0ad97229b88a09a6e4ff5b7",
+    "sha256": "4dea99bfaa016e21bc860d73f344236bd1e5c4977d1a9a8fd32f822b500ae1be",
+    "checked_on": "2026-09-08"
+  }
+]

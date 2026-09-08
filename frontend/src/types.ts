@@ -1,0 +1,16 @@
+export type RLE = {size: [number, number]; counts: number[]};
+export type Point = {x: number; y: number; label: 0 | 1};
+export type Box = [number, number, number, number];
+export type Tool = 'select' | 'pan' | 'positive' | 'negative' | 'box' | 'brush' | 'eraser';
+export type Theme = 'light' | 'dark' | 'system';
+export type Mask = {id: string; run_id: string; label: string; status: 'proposed' | 'accepted' | 'rejected'; visible: boolean; deleted?: boolean; color?: string; original_rle: RLE; edited_rle: RLE | null; score?: number | null; stability?: number | null; area: number; bbox: number[]; style?: Partial<Style>; [key: string]: unknown};
+export type Settings = {points_per_side: number; points_per_batch: number; pred_iou_thresh: number; stability_score_thresh: number; box_nms_thresh: number; crop_n_layers: number; detection_threshold?: number; mask_threshold?: number; remove_overlap?: boolean; overlap_threshold?: number; overlap_metric?: 'smaller' | 'iou'};
+export type Run = {id: string; image_id: string; model: string; checkpoint: string; revision: string; implementation: unknown; device: string; dtype: string; settings: Settings; prompts: {points: Point[]; box: Box | null; text?: string}; timing: Record<string, number | null>; created_at: string; masks: Mask[]; name?: string; [key: string]: unknown};
+export type ImageRecord = {id: string; name: string; width: number; height: number; sha256: string; [key: string]: unknown};
+export type Style = {mode: 'original' | 'outlines' | 'filled' | 'both' | 'mask-only' | 'spotlight' | 'category' | 'comparison'; palette: 'colorblind' | 'landscape' | 'mono' | 'distinct' | 'botanical' | 'coastal' | 'earth' | 'pastel' | 'jewel' | 'slate'; seed: number; fillOpacity: number; outlineOpacity: number; outlineWidth: number; outlineColor: string; fillColor: string; useOutlineColor: boolean; doubleStroke: boolean; showIndices: boolean; indexSize: number; exportIndexSize: number; showIds: boolean; showLabels: boolean; showScores: boolean; showBboxes: boolean; labelSize: number; brightness: number; saturation: number; dim: number; background: 'white' | 'black' | 'transparent'; exportOutlineWidth: number; promptsVisible: boolean; labelVisibility?: boolean};
+export type UIState = {imageId?: string; runId?: string; selectedIds?: string[]; points?: Point[]; box?: Box | null; model?: string; settings?: Settings; stylePresets?: Record<string, Style>; inferencePresets?: Record<string, Settings>; [key: string]: unknown};
+export type Project = {id: string; name: string; revision: number; images: ImageRecord[]; runs: Run[]; style: Partial<Style>; ui?: UIState; [key: string]: unknown};
+export type Model = {id: string; name?: string; checkpoint?: string; installed?: boolean; verified?: boolean; state?: string; reason?: string; revision?: string; implementation?: unknown; device?: string; capabilities?: Record<string,boolean>};
+export type Status = {ok: boolean; drive_available: boolean; error?: string; models: Model[]; presets: Record<string, Settings>; [key: string]: unknown};
+export type Job = {id: string; state: string; message?: string; result?: Run | null; error?: string; request_token: string; [key: string]: unknown};
+export type Camera = {x: number; y: number; zoom: number};

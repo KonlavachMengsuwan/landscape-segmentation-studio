@@ -1,0 +1,15 @@
+const paths:Record<string,React.ReactNode>={
+  landscape:<><path d="m3 17 6-11 5 8 3-5 4 8H3Z"/><path d="M3 21h18"/></>,
+  chevron:<path d="m9 5 7 7-7 7"/>, plus:<path d="M12 5v14M5 12h14"/>,minus:<path d="M5 12h14"/>, close:<path d="m6 6 12 12M6 18 18 6"/>,
+  upload:<><path d="M12 16V3m-5 5 5-5 5 5M4 15v5h16v-5"/></>,download:<path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4"/>,
+  save:<><path d="M4 3h13l4 4v14H3V3h1Z"/><path d="M7 3v6h10V3M7 21v-8h10v8"/></>, undo:<><path d="M4 10h10a6 6 0 0 1 0 12M4 10l5-5M4 10l5 5"/></>,redo:<><path d="M20 10H10a6 6 0 0 0 0 12M20 10l-5-5M20 10l-5 5"/></>,
+  eye:<><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></>,eyeoff:<><path d="m3 3 18 18M9 5a10 10 0 0 1 3 0c6 0 10 7 10 7a19 19 0 0 1-3 4M6 6a20 20 0 0 0-4 6s4 7 10 7a12 12 0 0 0 5-1"/></>,
+  select:<path d="m5 3 14 10-7 1-3 7-4-18Z"/>,pan:<><path d="M8 13V6a2 2 0 0 1 4 0v6-8a2 2 0 0 1 4 0v8-6a2 2 0 0 1 4 0v10c0 4-3 6-7 6-3 0-5-1-7-4l-3-5a2 2 0 0 1 3-2l2 2Z"/></>,
+  box:<rect x="4" y="4" width="16" height="16" rx="1" strokeDasharray="4 3"/>,brush:<><path d="m9 15 9-12 3 3-12 9Z"/><path d="M9 15c-6-2-1 8-7 6 8 3 10-1 7-6Z"/></>,eraser:<><path d="m4 13 10-10 7 7-11 11H7l-5-5 2-3Z"/><path d="m8 9 7 7M12 21h10"/></>,
+  fit:<><path d="M8 3H3v5m13-5h5v5M3 16v5h5m8 0h5v-5"/><rect x="7" y="7" width="10" height="10" rx="1"/></>,layers:<><path d="m3 8 9-5 9 5-9 5-9-5ZM3 13l9 5 9-5M3 18l9 5 9-5"/></>,
+  play:<path d="m7 3 14 9-14 9V3Z"/>,stop:<rect x="5" y="5" width="14" height="14" rx="2"/>,check:<path d="m5 12 4 4L20 5"/>,clock:<><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></>,
+  sun:<><circle cx="12" cy="12" r="4"/><path d="M12 1v2m0 18v2M1 12h2m18 0h2M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></>,moon:<path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11Z"/>,system:<><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></>,
+  settings:<><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="16" cy="17" r="3"/></>,info:<><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v.1"/></>,image:<><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 4 4-6 5 6"/></>,
+  folder:<path d="M3 6V4h7l2 3h9v13H3V6Z"/>,copy:<><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></>,trash:<><path d="M3 6h18M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7"/></>,shuffle:<><path d="m3 5 4 0 10 14h4m-4-4 4 4-4 4M3 19h4l10-14h4m-4-4 4 4-4 4"/></>,search:<><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></>,compare:<><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M12 2v20"/></>,keyboard:<><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M5 10h1m3 0h1m3 0h1m3 0h1M5 13h1m3 0h1m3 0h1m3 0h1M7 16h10"/></>,warning:<><path d="m12 3 10 18H2L12 3Z"/><path d="M12 9v5m0 3v.1"/></>,
+};
+export default function Icon({name,size=18}:{name:string;size?:number}) {return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]||paths.info}</svg>;}

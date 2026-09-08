@@ -1,0 +1,19 @@
+Landscape Segmentation Studio
+Copyright 2026 Landscape Segmentation Studio contributors
+
+Original application code is made available under the Apache License 2.0.
+See LICENSE. Existing third-party copyrights and licenses remain in force.
+This notice does not relicense SAM model weights, Meta SAM3/3.1 materials,
+or other third-party material. Any SAM3/3.1 material or derivative remains
+subject to the separate SAM License in licenses/SAM3-LICENSE.txt.
+
+Hugging Face SAM conversion functions retain their Apache-2.0 headers and
+attribution in docs/THIRD_PARTY.md. Bundled React, React DOM, Scheduler and
+Vite runtime code retain their notices under licenses/.
+
+The public Yosemite example is credited in samples/ATTRIBUTION.md.
+No copyright is claimed in the original U.S. Government photograph.
+
+SAM research acknowledgments and license conditions are in docs/LICENSING.md.
+This independent educational application is not an official Meta,
+Hugging Face, or National Park Service product. No endorsement is implied.

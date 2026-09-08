@@ -1,0 +1,274 @@
+[
+  {
+    "id": "tiny",
+    "name": "SAM 2.1 Tiny",
+    "family": "sam2",
+    "checkpoint": "facebook/sam2.1-hiera-tiny",
+    "revision": "de431c4043854a71d8101e17995dfe596bf101a5",
+    "directory": "sam2.1-tiny",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 5695,
+        "sha256": "860aff9751b139d83a4ad7df1e5535416fded533e0ead02625edbefcb9953cce",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-tiny/resolve/de431c4043854a71d8101e17995dfe596bf101a5/config.json"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 155908064,
+        "sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-tiny/resolve/de431c4043854a71d8101e17995dfe596bf101a5/model.safetensors"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 683,
+        "sha256": "6ebf229ee259368ce4a8d4f2fe893a72b053023710853e257253939e601f583d",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-tiny/resolve/de431c4043854a71d8101e17995dfe596bf101a5/preprocessor_config.json"
+      },
+      {
+        "name": "processor_config.json",
+        "bytes": 95,
+        "sha256": "f8a68e865cfad115c1c2763f3d93eca7b1c622da06da2a9273eb437fb2389b6d",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-tiny/resolve/de431c4043854a71d8101e17995dfe596bf101a5/processor_config.json"
+      }
+    ]
+  },
+  {
+    "id": "small",
+    "name": "SAM 2.1 Small",
+    "family": "sam2",
+    "checkpoint": "facebook/sam2.1-hiera-small",
+    "revision": "ee5bba1d82bb8749febdf90f45e84b687142ba03",
+    "directory": "sam2.1-small",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 5698,
+        "sha256": "97ff9f65b76d107acda4247885f0a5555d0048850ae3c5f97183df289aaecde9",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-small/resolve/ee5bba1d82bb8749febdf90f45e84b687142ba03/config.json"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 184305280,
+        "sha256": "0a4067b11ce1e23d5229203f11c718a823060d15a4b23fa2372a7d4b77cbbc60",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-small/resolve/ee5bba1d82bb8749febdf90f45e84b687142ba03/model.safetensors"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 683,
+        "sha256": "6ebf229ee259368ce4a8d4f2fe893a72b053023710853e257253939e601f583d",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-small/resolve/ee5bba1d82bb8749febdf90f45e84b687142ba03/preprocessor_config.json"
+      },
+      {
+        "name": "processor_config.json",
+        "bytes": 95,
+        "sha256": "f8a68e865cfad115c1c2763f3d93eca7b1c622da06da2a9273eb437fb2389b6d",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-small/resolve/ee5bba1d82bb8749febdf90f45e84b687142ba03/processor_config.json"
+      }
+    ]
+  },
+  {
+    "id": "sam2.1-base-plus",
+    "name": "SAM 2.1 Base-Plus",
+    "family": "sam2",
+    "checkpoint": "facebook/sam2.1-hiera-base-plus",
+    "revision": "b7320756a13354e7530a63935656d35b2f91a290",
+    "directory": "sam2.1-base-plus",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 5705,
+        "sha256": "8e24a93b6a40d4dad86eaec383ce7b4044f37ec6360136460f5ff2ce55f87390",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-base-plus/resolve/b7320756a13354e7530a63935656d35b2f91a290/config.json"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 323476296,
+        "sha256": "2012733a0de5d03efd1bba550a2847c4551be9ef2e0d497c83074df66189f780",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-base-plus/resolve/b7320756a13354e7530a63935656d35b2f91a290/model.safetensors"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 683,
+        "sha256": "6ebf229ee259368ce4a8d4f2fe893a72b053023710853e257253939e601f583d",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-base-plus/resolve/b7320756a13354e7530a63935656d35b2f91a290/preprocessor_config.json"
+      },
+      {
+        "name": "processor_config.json",
+        "bytes": 95,
+        "sha256": "f8a68e865cfad115c1c2763f3d93eca7b1c622da06da2a9273eb437fb2389b6d",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-base-plus/resolve/b7320756a13354e7530a63935656d35b2f91a290/processor_config.json"
+      }
+    ]
+  },
+  {
+    "id": "sam2.1-large",
+    "name": "SAM 2.1 Large",
+    "family": "sam2",
+    "checkpoint": "facebook/sam2.1-hiera-large",
+    "revision": "665f8e2ad61cf5f53d65644ff27c8ee525124610",
+    "directory": "sam2.1-large",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 5705,
+        "sha256": "00446988cf4d617118d2d347eabe2c46aebed744628facdd540508be30b69ec3",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-large/resolve/665f8e2ad61cf5f53d65644ff27c8ee525124610/config.json"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 897897416,
+        "sha256": "dc407dce21301fd94abb395c5099b4f2c455fdc8a8f261ac3d0ea6d4cd197230",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-large/resolve/665f8e2ad61cf5f53d65644ff27c8ee525124610/model.safetensors"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 683,
+        "sha256": "6ebf229ee259368ce4a8d4f2fe893a72b053023710853e257253939e601f583d",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-large/resolve/665f8e2ad61cf5f53d65644ff27c8ee525124610/preprocessor_config.json"
+      },
+      {
+        "name": "processor_config.json",
+        "bytes": 95,
+        "sha256": "f8a68e865cfad115c1c2763f3d93eca7b1c622da06da2a9273eb437fb2389b6d",
+        "url": "https://huggingface.co/facebook/sam2.1-hiera-large/resolve/665f8e2ad61cf5f53d65644ff27c8ee525124610/processor_config.json"
+      }
+    ]
+  },
+  {
+    "id": "sam2-tiny",
+    "name": "SAM 2 Tiny",
+    "family": "sam2",
+    "checkpoint": "facebook/sam2-hiera-tiny",
+    "revision": "7c218beaf0bb87874785f32b582f640134fc1c09",
+    "directory": "sam2-tiny",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 5697,
+        "sha256": "3239c7ecf212b1a9d9f98310c8993612335c5596a12c8cfba25e512e9dc5965b",
+        "url": "https://huggingface.co/facebook/sam2-hiera-tiny/resolve/7c218beaf0bb87874785f32b582f640134fc1c09/config.json"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 155841672,
+        "sha256": "1449035ba6ba2ed524c646da989e5cb3a9b93b97f1c1b2d474e598c3b748d99f",
+        "url": "https://huggingface.co/facebook/sam2-hiera-tiny/resolve/7c218beaf0bb87874785f32b582f640134fc1c09/model.safetensors"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 683,
+        "sha256": "6ebf229ee259368ce4a8d4f2fe893a72b053023710853e257253939e601f583d",
+        "url": "https://huggingface.co/facebook/sam2-hiera-tiny/resolve/7c218beaf0bb87874785f32b582f640134fc1c09/preprocessor_config.json"
+      },
+      {
+        "name": "processor_config.json",
+        "bytes": 95,
+        "sha256": "f8a68e865cfad115c1c2763f3d93eca7b1c622da06da2a9273eb437fb2389b6d",
+        "url": "https://huggingface.co/facebook/sam2-hiera-tiny/resolve/7c218beaf0bb87874785f32b582f640134fc1c09/processor_config.json"
+      }
+    ]
+  },
+  {
+    "id": "sam2-small",
+    "name": "SAM 2 Small",
+    "family": "sam2",
+    "checkpoint": "facebook/sam2-hiera-small",
+    "revision": "e080ada8afd19df5e165abe71b006edc7f4c3d4e",
+    "directory": "sam2-small",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 5700,
+        "sha256": "7e6519b57af9540d4664501d15e8958054d3be46678d4f2d5320dacaec3d344d",
+        "url": "https://huggingface.co/facebook/sam2-hiera-small/resolve/e080ada8afd19df5e165abe71b006edc7f4c3d4e/config.json"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 184238888,
+        "sha256": "293ad59be7669df6aa41ba79efcdeb7490f43cdc4c06cee4bf66bd89dafad293",
+        "url": "https://huggingface.co/facebook/sam2-hiera-small/resolve/e080ada8afd19df5e165abe71b006edc7f4c3d4e/model.safetensors"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 683,
+        "sha256": "6ebf229ee259368ce4a8d4f2fe893a72b053023710853e257253939e601f583d",
+        "url": "https://huggingface.co/facebook/sam2-hiera-small/resolve/e080ada8afd19df5e165abe71b006edc7f4c3d4e/preprocessor_config.json"
+      },
+      {
+        "name": "processor_config.json",
+        "bytes": 95,
+        "sha256": "f8a68e865cfad115c1c2763f3d93eca7b1c622da06da2a9273eb437fb2389b6d",
+        "url": "https://huggingface.co/facebook/sam2-hiera-small/resolve/e080ada8afd19df5e165abe71b006edc7f4c3d4e/processor_config.json"
+      }
+    ]
+  },
+  {
+    "id": "sam2-base-plus",
+    "name": "SAM 2 Base-Plus",
+    "family": "sam2",
+    "checkpoint": "facebook/sam2-hiera-base-plus",
+    "revision": "98efa66555fceff5f74ad281fb8003536dcfb6ff",
+    "directory": "sam2-base-plus",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 5707,
+        "sha256": "1138d7a7ae4625016fc7326d8d6548c369583612f188f1a6ae66fff22b752f95",
+        "url": "https://huggingface.co/facebook/sam2-hiera-base-plus/resolve/98efa66555fceff5f74ad281fb8003536dcfb6ff/config.json"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 323409896,
+        "sha256": "cce38e86bf9fb50a6c7a454776d280b992ea16f763ed0db3f9db9fde4655b3f1",
+        "url": "https://huggingface.co/facebook/sam2-hiera-base-plus/resolve/98efa66555fceff5f74ad281fb8003536dcfb6ff/model.safetensors"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 683,
+        "sha256": "6ebf229ee259368ce4a8d4f2fe893a72b053023710853e257253939e601f583d",
+        "url": "https://huggingface.co/facebook/sam2-hiera-base-plus/resolve/98efa66555fceff5f74ad281fb8003536dcfb6ff/preprocessor_config.json"
+      },
+      {
+        "name": "processor_config.json",
+        "bytes": 95,
+        "sha256": "f8a68e865cfad115c1c2763f3d93eca7b1c622da06da2a9273eb437fb2389b6d",
+        "url": "https://huggingface.co/facebook/sam2-hiera-base-plus/resolve/98efa66555fceff5f74ad281fb8003536dcfb6ff/processor_config.json"
+      }
+    ]
+  },
+  {
+    "id": "sam2-large",
+    "name": "SAM 2 Large",
+    "family": "sam2",
+    "checkpoint": "facebook/sam2-hiera-large",
+    "revision": "e6a8e8809b8f1bfa2238b6d080f3d05cc76bd251",
+    "directory": "sam2-large",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 5707,
+        "sha256": "d897aa95667f78495b3e9430c09510393ead7bc1c80df4122439d04c6bfc3146",
+        "url": "https://huggingface.co/facebook/sam2-hiera-large/resolve/e6a8e8809b8f1bfa2238b6d080f3d05cc76bd251/config.json"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 897831024,
+        "sha256": "ca82d5aa03964f3ff14a215b6da8e6689958893cd43682bf631054afed34133c",
+        "url": "https://huggingface.co/facebook/sam2-hiera-large/resolve/e6a8e8809b8f1bfa2238b6d080f3d05cc76bd251/model.safetensors"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 683,
+        "sha256": "6ebf229ee259368ce4a8d4f2fe893a72b053023710853e257253939e601f583d",
+        "url": "https://huggingface.co/facebook/sam2-hiera-large/resolve/e6a8e8809b8f1bfa2238b6d080f3d05cc76bd251/preprocessor_config.json"
+      },
+      {
+        "name": "processor_config.json",
+        "bytes": 95,
+        "sha256": "f8a68e865cfad115c1c2763f3d93eca7b1c622da06da2a9273eb437fb2389b6d",
+        "url": "https://huggingface.co/facebook/sam2-hiera-large/resolve/e6a8e8809b8f1bfa2238b6d080f3d05cc76bd251/processor_config.json"
+      }
+    ]
+  }
+]
